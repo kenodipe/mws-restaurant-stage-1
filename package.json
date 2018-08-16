@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-app-1",
+  "version": "1.0.0",
+  "description": "Restaurant app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --files '*' --port 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenodipe/restaurant-app-1.git"
+  },
+  "keywords": [
+    "restaurant",
+    "app"
+  ],
+  "author": "Kehinde Onadipe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenodipe/restaurant-app-1/issues"
+  },
+  "homepage": "https://github.com/kenodipe/restaurant-app-1#readme",
+  "dependencies": {
+    "browser-sync": "^2.24.6"
+  }
+}
