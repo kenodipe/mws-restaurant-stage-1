@@ -1,3 +1,5 @@
+// reference to https://www.youtube.com/watch?v=ksXwaWHCW6k
+
 const cacheName = "v1";
 // call install event
 self.addEventListener("install", e => {
