@@ -319,12 +319,10 @@ nav h1 a {
 #reviews-list li {
   min-height: 250px;
   display: block;
-  background-color: #fff;
-  padding: 10px;
 }
 
 .content {
-  background-color: #f3f3f3;
+  padding: 5px;
 }
 
 #reviews-list li p {
