@@ -105,7 +105,7 @@ nav h1 a {
   background-color: #eee;
   font-size: 17px;
   margin: 0;
-  width: calc(50% - 80px);
+  width: 100%;
 }
 
 /* Display list items side by side */
@@ -172,7 +172,7 @@ nav h1 a {
 #restaurants-list li {
   background-color: #fff;
   font-family: Arial, sans-serif;
-  min-height: 380px;
+  min-height: 400px;
 }
 #restaurants-list .restaurant-img {
   background-color: #ccc;
@@ -212,7 +212,7 @@ nav h1 a {
   margin-right: -10px;
 }
 
-.row:after {
+.row::after {
   content: "";
   display: table;
   clear: both;
@@ -235,32 +235,43 @@ nav h1 a {
 @media (min-width: 578px) and (max-width: 880px) {
   [class*="col-"] {
     float: left;
-    padding-right: 10px;
   }
   .col-2-3 {
     width: 50%;
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 578px) {
+  [class*="col-"] {
+    float: left;
+  }
+  .div-2-3 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 577px) {
+  [class*="col-"] {
+    float: left;
+  }
+  .div-2-3 {
+    width: 100%;
   }
 }
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
-  top: 0;
   width: 100%;
-  z-index: 1000;
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
-  height: 87%;
-  position: fixed;
-  right: 0;
-  top: 80px;
-  width: 50%;
+  float: right;
 }
 .inside #map {
   background-color: #ccc;
-  height: 100%;
   width: 100%;
+  height: 45em;
 }
 /* .inside #footer {
   bottom: 0;
@@ -296,16 +307,7 @@ nav h1 a {
   text-transform: uppercase;
   width: 90%;
 }
-#restaurant-container,
-#reviews-container {
-  border-bottom: 1px solid #d9d9d9;
-  border-top: 1px solid #fff;
-  padding: 140px 40px 30px;
-  width: 50%;
-}
-#reviews-container {
-  padding: 30px 40px 80px;
-}
+
 #reviews-container h2 {
   color: #f58500;
   font-size: 24pt;
@@ -313,21 +315,18 @@ nav h1 a {
   letter-spacing: -1px;
   padding-bottom: 1pt;
 }
-#reviews-list {
-  margin: 0;
-  padding: 0;
-}
+
 #reviews-list li {
-  background-color: #fff;
-  border: 2px solid #f3f3f3;
+  min-height: 250px;
   display: block;
-  list-style-type: none;
-  margin: 0 0 30px;
-  overflow: hidden;
-  padding: 0 20px 20px;
-  position: relative;
-  width: 85%;
+  background-color: #fff;
+  padding: 10px;
 }
+
+.content {
+  background-color: #f3f3f3;
+}
+
 #reviews-list li p {
   margin: 0 0 10px;
 }
