@@ -203,3 +203,13 @@ getParameterByName = (name, url) => {
   if (!results[2]) return "";
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 };
+
+/**
+ * register service worker
+ */
+if (navigator.serviceWorker) {
+  navigator.serviceWorker
+    .register("../service-worker.js")
+    .then(() => console.log("Service worker registered!"))
+    .catch(e => console.log("Service worker registration failed", e));
+}
